@@ -1,0 +1,368 @@
+{
+  "id": "41bbc8af-9a0f-44c0-8d98-734df1998561",
+  "version": "2.0",
+  "name": "Destiny2",
+  "url": "https://www.bungie.net/7/ru/Destiny",
+  "tests": [{
+    "id": "2917a87f-6252-4a58-be8c-bbcccfecce28",
+    "name": "News",
+    "commands": [{
+      "id": "4d746672-960d-4955-a3b4-c7d193b25ae9",
+      "comment": "",
+      "command": "open",
+      "target": "/7/en/Destiny",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f37998d4-47fc-4471-af83-f0967c24b77f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98a896e1-1601-4b61-bca7-7fdf8db77dea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MainNavigation_smallMenu__7MZvS",
+      "targets": [
+        ["css=.MainNavigation_smallMenu__7MZvS", "css:finder"],
+        ["xpath=//header[@id='main-navigation']/div/div", "xpath:idRelative"],
+        ["xpath=//header/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d275a82a-9b21-4902-9945-25c72568f5d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MenuItem_navBucket__1AgA8:nth-child(4) .material-icons",
+      "targets": [
+        ["css=.MenuItem_navBucket__1AgA8:nth-child(4) .material-icons", "css:finder"],
+        ["xpath=//header[@id='main-navigation']/div/div[2]/div[3]/a/span/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59cd1738-7c95-4f2a-920b-63018ea433bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TopNavNews",
+      "targets": [
+        ["css=.TopNavNews", "css:finder"],
+        ["xpath=//header[@id='main-navigation']/div/div[2]/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/7/en/News')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "32de410d-e893-4423-bdf0-ae820aa877fd",
+    "name": "Login",
+    "commands": [{
+      "id": "cc5f0d69-2190-4275-a1df-5df2a593eb16",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bungie.net/7/ru/Destiny",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa8bb65c-8d01-4228-83ce-59b042efecb7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x831",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6092895-c136-4acb-aa0b-f4fb00e7002d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.UserMenu_trigger__2-inN:nth-child(1) .material-icons",
+      "targets": [
+        ["css=.UserMenu_trigger__2-inN:nth-child(1) .material-icons", "css:finder"],
+        ["xpath=//header[@id='main-navigation']/div/div[3]/div/div[3]/a/span/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[3]/a/span/i", "xpath:position"],
+        ["xpath=//i[contains(.,'people_alt')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "931a2126-ee27-4b96-b461-e3e476705e98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MenuItem_menuItem__2lond:nth-child(2) > .RequiresAuth_authTriggerButton__3CDLn",
+      "targets": [
+        ["css=.MenuItem_menuItem__2lond:nth-child(2) > .RequiresAuth_authTriggerButton__3CDLn", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div[2]/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Steam')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4312",
+      "windowTimeout": 2000
+    }, {
+      "id": "cfd84ef7-62d2-4a1f-9840-80176aa273b9",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff209dd5-f652-4710-963e-b62a2408a84c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4312}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4df1ed2a-f048-41d7-b128-ee89ba00eb67",
+      "comment": "",
+      "command": "click",
+      "target": "id=imageLogin",
+      "targets": [
+        ["id=imageLogin", "id"],
+        ["css=#imageLogin", "css:finder"],
+        ["xpath=//input[@id='imageLogin']", "xpath:attributes"],
+        ["xpath=//form[@id='openidForm']/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b2c70d8-5185-4a00-bb97-a2ff9ad21925",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75d5c473-a454-4ba7-a122-aae9b392da0d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e619d646-fc08-4401-ae76-ab4515ec5199",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bungie.net/7/ru/User/Profile",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6da093e1-162c-4925-82f4-7931ebd70193",
+    "name": "Language",
+    "commands": [{
+      "id": "2c3b55b6-c13a-4968-a52b-526d721b58af",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bungie.net/7/en/Destiny",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "089b5ee6-27c1-4413-a400-d95bd58f23f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "792x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e9f51ab-a6d5-4128-85fb-a05a2425b343",
+      "comment": "",
+      "command": "click",
+      "target": "css=path",
+      "targets": [
+        ["css=path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "41d678d3-5480-4c2a-a15d-3c59e42630bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.LocaleSwitcher_option__3s4P1:nth-child(11)",
+      "targets": [
+        ["css=.LocaleSwitcher_option__3s4P1:nth-child(11)", "css:finder"],
+        ["xpath=//header[@id='main-navigation']/div/div[3]/div/div[2]/div[2]/div[11]", "xpath:idRelative"],
+        ["xpath=//div[11]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "342a16a8-64f6-4d0e-83da-498a219ba517",
+    "name": "Redeem Codes",
+    "commands": [{
+      "id": "2bb9875f-fbc9-4631-aaff-73e0c1ad7990",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bungie.net/7/en/Destiny",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "500bf328-c951-423e-b1d7-2f2be43e7d1f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "797x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ec3a5fe-1a6c-4fc3-869f-82cd37e647d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.UserMenu_userAvatar__2yuZ1",
+      "targets": [
+        ["css=.UserMenu_userAvatar__2yuZ1", "css:finder"],
+        ["xpath=//header[@id='main-navigation']/div/div[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c04a335c-d8ac-481f-8852-681407b35683",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(9) > .OneLineItem_oneLineItem__2BEmf",
+      "targets": [
+        ["css=a:nth-child(9) > .OneLineItem_oneLineItem__2BEmf", "css:finder"],
+        ["xpath=//header[@id='main-navigation']/div/div[4]/a[7]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/a[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12ea9cc0-ede6-451e-8ebc-05bdd045df54",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div[4]/div/div/div/div/div/form/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "288248de-e60a-40fa-be91-8a122ef54a13",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='CAD-ADA-DAD']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div[4]/div/div/div/div/div/form/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "CAD-ADA-DAD"
+    }, {
+      "id": "dcd4a3c6-213a-4b22-9b98-5e94ce23e186",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='CAD-ADA-DAD']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div[4]/div/div/div/div/div/form/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "76664f56-81aa-431e-94e1-1582378db13a",
+    "name": "Clan",
+    "commands": [{
+      "id": "59896ca3-8544-445d-a0cd-16f855ac8822",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bungie.net/7/en/Destiny",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e03f9c2-fa7c-4737-93a5-db4dde208e76",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "797x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "418392d6-0f87-402f-86ad-fcca59ca74c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MainNavigation_smallMenu__7MZvS",
+      "targets": [
+        ["css=.MainNavigation_smallMenu__7MZvS", "css:finder"],
+        ["xpath=//header[@id='main-navigation']/div/div", "xpath:idRelative"],
+        ["xpath=//header/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f643f9c4-4e5e-4873-a6b4-b50178affe81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MenuItem_navBucket__1AgA8:nth-child(4) .material-icons",
+      "targets": [
+        ["css=.MenuItem_navBucket__1AgA8:nth-child(4) .material-icons", "css:finder"],
+        ["xpath=//header[@id='main-navigation']/div/div[2]/div[3]/a/span/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1cb2051-0c53-4e10-a00e-183ca251bb33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TopNavClanSearch > .MenuItem_linkLabel__2AN_A > div",
+      "targets": [
+        ["css=.TopNavClanSearch > .MenuItem_linkLabel__2AN_A > div", "css:finder"],
+        ["xpath=//header[@id='main-navigation']/div/div[2]/div[3]/div/a[3]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8da75905-db65-4a51-8d31-1a29e91f7bb0",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchTerm",
+      "targets": [
+        ["id=searchTerm", "id"],
+        ["name=searchTerm", "name"],
+        ["css=#searchTerm", "css:finder"],
+        ["xpath=//input[@id='searchTerm']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div[2]/div/div[2]/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "848de6ef-7508-4432-ad13-6ed12e2fb0c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchTerm",
+      "targets": [
+        ["id=searchTerm", "id"],
+        ["name=searchTerm", "name"],
+        ["css=#searchTerm", "css:finder"],
+        ["xpath=//input[@id='searchTerm']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div[2]/div/div[2]/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "The light of telperion"
+    }, {
+      "id": "c4045cbf-f1c5-414e-abca-cace2ea9a41c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Button_button__LYEcj:nth-child(1)",
+      "targets": [
+        ["css=.Button_button__LYEcj:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div[2]/div/div[2]/div[2]/div/div/form/button/button", "xpath:idRelative"],
+        ["xpath=//button/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d8a1121b-87a9-4c69-9fa8-142fb47c32cf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2917a87f-6252-4a58-be8c-bbcccfecce28"]
+  }],
+  "urls": ["https://www.bungie.net/", "https://www.bungie.net/7/ru/Destiny"],
+  "plugins": []
+}
